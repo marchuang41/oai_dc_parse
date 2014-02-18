@@ -11,7 +11,7 @@ class ErrorHandler:
 
 class dbController:
 	def __init__(self):
-		self.con = mdb.connect('localhost','root','1m4agrncahu','citeseerx')
+		self.con = mdb.connect('localhost','cite','cite','citeseerx')
 		self.con.set_character_set('utf8')
 		self.cur = self.con.cursor(mdb.cursors.DictCursor)
 		self.lastId = 0
